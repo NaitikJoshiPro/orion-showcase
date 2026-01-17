@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORION | Enterprise Operations Platform</title>
+    <meta name="description"
+        content="Operations Reporting Intelligence Operational Nexus - A unified enterprise platform for chargeback management, governance, and AI-powered analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">Ø</a>
+        <div class="nav-links">
+            <a href="#god-view">Overview</a>
+            <a href="#system-map">Architecture</a>
+            <a href="#rebuttal-sanctum">Rebuttal Engine</a>
+            <a href="#governance">Governance</a>
+            <a href="#ai-layer">Intelligence</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+    </nav>
+
+    <!-- Section 1: GOD VIEW -->
+    <section id="god-view" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-eyebrow">OPERATIONS · REPORTING · INTELLIGENCE · OPERATIONAL · NEXUS</div>
+            <h1 class="hero-logo">ORION</h1>
+            <p class="hero-tagline">Unified Enterprise Operations Platform</p>
+            <p class="hero-subtitle">Built in 40 days. 40,000 lines. Zero external dependencies.</p>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-value" data-target="2347892">$0</div>
+                <div class="kpi-label">Chargebacks Overturned</div>
+                <div class="kpi-sub">Lifetime recovery value</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" data-target="86472">0</div>
+                <div class="kpi-label">Cases Processed</div>
+                <div class="kpi-sub">Automated RCA distribution</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" data-target="12847">0</div>
+                <div class="kpi-label">Hours Reclaimed</div>
+                <div class="kpi-sub">Manual work eliminated</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" data-target="99.7" data-suffix="%">0%</div>
+                <div class="kpi-label">System Uptime</div>
+                <div class="kpi-sub">Production reliability</div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Section 2: SYSTEM MAP -->
+    <section id="system-map" class="section">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">System Architecture</h2>
+            <p class="section-subtitle">Six modules. One unified platform. Zero external dependencies.</p>
+        </div>
+
+        <div class="architecture-container">
+            <div class="modules-grid">
+                <div class="module-card active" data-module="cb">
+                    <div class="module-status">ACTIVE</div>
+                    <div class="module-icon">📋</div>
+                    <div class="module-name">Chargeback</div>
+                    <div class="module-id">CB</div>
+                    <div class="module-desc">Case intake, RCA analysis, rebuttal generation, representation management
+                    </div>
+                </div>
+                <div class="module-card active" data-module="rt">
+                    <div class="module-status">ACTIVE</div>
+                    <div class="module-icon">📈</div>
+                    <div class="module-name">Reporting</div>
+                    <div class="module-id">RT</div>
+                    <div class="module-desc">RACI governance, approval workflows, audit trails, compliance tracking
+                    </div>
+                </div>
+                <div class="module-card planned" data-module="cbqa">
+                    <div class="module-status">PLANNED</div>
+                    <div class="module-icon">✅</div>
+                    <div class="module-name">Chargeback QA</div>
+                    <div class="module-id">CBQA</div>
+                    <div class="module-desc">Quality assurance, error detection, analyst performance metrics</div>
+                </div>
+                <div class="module-card planned" data-module="faq">
+                    <div class="module-status">PLANNED</div>
+                    <div class="module-icon">🔍</div>
+                    <div class="module-name">Fraud Analysis Queue</div>
+                    <div class="module-id">FAQ</div>
+                    <div class="module-desc">Real-time fraud detection, risk scoring, alert management</div>
+                </div>
+                <div class="module-card planned" data-module="faqa">
+                    <div class="module-status">PLANNED</div>
+                    <div class="module-icon">📊</div>
+                    <div class="module-name">Fraud Analysis QA</div>
+                    <div class="module-id">FAQA</div>
+                    <div class="module-desc">Fraud analyst quality metrics, false positive tracking</div>
+                </div>
+                <div class="module-card planned" data-module="on">
+                    <div class="module-status">PLANNED</div>
+                    <div class="module-icon">📁</div>
+                    <div class="module-name">Operations</div>
+                    <div class="module-id">ON</div>
+                    <div class="module-desc">Unified operations dashboard, KPI aggregation, executive reporting</div>
+                </div>
+            </div>
+
+            <div class="pipeline-visualization">
+                <div class="pipeline-label">Data Flow</div>
+                <div class="pipeline">
+                    <div class="pipeline-node">Google Sheets</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-node">Apps Script</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-node">OpenAI</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-node">PDF Generation</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-node">Drive Storage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: REBUTTAL ENGINE SANCTUM -->
+    <section id="rebuttal-sanctum" class="section">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">The Rebuttal Engine</h2>
+            <p class="section-subtitle">Case intake to PDF generation. Atomic operations. Race-condition proof.</p>
+        </div>
+
+        <div class="sanctum-container">
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="case-badge">CASE INTAKE</div>
+                    <div class="case-id">CB-2026-847291</div>
+                </div>
+                <div class="case-grid">
+                    <div class="case-field">
+                        <span class="field-label">Reference ID</span>
+                        <span class="field-value mono">78472910385</span>
+                    </div>
+                    <div class="case-field">
+                        <span class="field-label">Dispute Amount</span>
+                        <span class="field-value mono">$842.50</span>
+                    </div>
+                    <div class="case-field">
+                        <span class="field-label">Reason Code</span>
+                        <span class="field-value">13.7 - Credit Not Processed</span>
+                    </div>
+                    <div class="case-field">
+                        <span class="field-label">Due Date</span>
+                        <span class="field-value mono">01/24/2026</span>
+                    </div>
+                    <div class="case-field">
+                        <span class="field-label">Portal</span>
+                        <span class="field-value">Gateway A</span>
+                    </div>
+                    <div class="case-field">
+                        <span class="field-label">Currency</span>
+                        <span class="field-value mono">USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rca-selector">
+                <div class="rca-header">RCA DETERMINATION</div>
+                <div class="rca-options">
+                    <div class="rca-option">
+                        <span class="rca-category">FRAUD</span>
+                        <span class="rca-items">Card Not Present, Fraudulent Transaction, No Knowledge</span>
+                    </div>
+                    <div class="rca-option selected">
+                        <span class="rca-category">CUSTOMER</span>
+                        <span class="rca-items">Cancel Policy Dispute, Non-Refundable, Early Checkout</span>
+                    </div>
+                    <div class="rca-option">
+                        <span class="rca-category">SERVICE</span>
+                        <span class="rca-items">Cancel Not Performed, Data Entry Issue, Incorrect Booking</span>
+                    </div>
+                    <div class="rca-option">
+                        <span class="rca-category">HOTEL</span>
+                        <span class="rca-items">Hotel Billed Direct, Unsatisfactory, Room Not Available</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-panel">
+                <div class="evidence-header">EVIDENCE DOCUMENTATION</div>
+                <div class="evidence-grid">
+                    <div class="evidence-item uploaded">
+                        <div class="evidence-icon">📄</div>
+                        <div class="evidence-name">Confirmation Page</div>
+                        <div class="evidence-status">UPLOADED</div>
+                    </div>
+                    <div class="evidence-item uploaded">
+                        <div class="evidence-icon">📄</div>
+                        <div class="evidence-name">Checkout Page</div>
+                        <div class="evidence-status">UPLOADED</div>
+                    </div>
+                    <div class="evidence-item uploaded">
+                        <div class="evidence-icon">🖼️</div>
+                        <div class="evidence-name">Refund Screenshot</div>
+                        <div class="evidence-status">UPLOADED</div>
+                    </div>
+                    <div class="evidence-item pending">
+                        <div class="evidence-icon">📄</div>
+                        <div class="evidence-name">Customer Contact</div>
+                        <div class="evidence-status">PENDING</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-panel">
+                <div class="timeline-header">DECISION TIMELINE</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot done"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-time">09:14:32</div>
+                            <div class="timeline-action">Case claimed by analyst</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot done"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-time">09:18:47</div>
+                            <div class="timeline-action">Reservation data fetched</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot done"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-time">09:22:15</div>
+                            <div class="timeline-action">RCA determined: Customer - Cancel Policy</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot current"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-time">09:28:03</div>
+                            <div class="timeline-action">Awaiting PDF generation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: REPRESENTATION & GOVERNANCE -->
+    <section id="governance" class="section">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Governance & RACI</h2>
+            <p class="section-subtitle">Responsibility matrices. Approval chains. Accountability trails.</p>
+        </div>
+
+        <div class="governance-container">
+            <div class="raci-matrix">
+                <div class="raci-header-row">
+                    <div class="raci-cell header">Report</div>
+                    <div class="raci-cell header r">R</div>
+                    <div class="raci-cell header a">A</div>
+                    <div class="raci-cell header c">C</div>
+                    <div class="raci-cell header i">I</div>
+                </div>
+                <div class="raci-row">
+                    <div class="raci-cell name">Performance Report</div>
+                    <div class="raci-cell r">Analyst</div>
+                    <div class="raci-cell a">QA Lead</div>
+                    <div class="raci-cell c">Team Lead</div>
+                    <div class="raci-cell i">Director</div>
+                </div>
+                <div class="raci-row">
+                    <div class="raci-cell name">Daily Metrics</div>
+                    <div class="raci-cell r">Ops Team</div>
+                    <div class="raci-cell a">Ops QA</div>
+                    <div class="raci-cell c">SME</div>
+                    <div class="raci-cell i">Manager</div>
+                </div>
+                <div class="raci-row">
+                    <div class="raci-cell name">Working Queue</div>
+                    <div class="raci-cell r">Ops Team</div>
+                    <div class="raci-cell a">Ops QA</div>
+                    <div class="raci-cell c">SME</div>
+                    <div class="raci-cell i">Manager</div>
+                </div>
+                <div class="raci-row">
+                    <div class="raci-cell name">Monthly Billing</div>
+                    <div class="raci-cell r">SME</div>
+                    <div class="raci-cell a">SME</div>
+                    <div class="raci-cell c">Process Lead</div>
+                    <div class="raci-cell i">Director</div>
+                </div>
+            </div>
+
+            <div class="approval-flow">
+                <div class="flow-header">APPROVAL WORKFLOW</div>
+                <div class="flow-stages">
+                    <div class="flow-stage completed">
+                        <div class="stage-icon">✓</div>
+                        <div class="stage-name">Created</div>
+                        <div class="stage-actor">Responsible</div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-stage completed">
+                        <div class="stage-icon">✓</div>
+                        <div class="stage-name">Reviewed</div>
+                        <div class="stage-actor">Consulted</div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-stage current">
+                        <div class="stage-icon">◉</div>
+                        <div class="stage-name">Pending</div>
+                        <div class="stage-actor">Accountable</div>
+                    </div>
+                    <div class="flow-connector dim"></div>
+                    <div class="flow-stage pending">
+                        <div class="stage-icon">○</div>
+                        <div class="stage-name">Notify</div>
+                        <div class="stage-actor">Informed</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-status">
+                <div class="queue-header">QUEUE STATUS</div>
+                <div class="queue-bars">
+                    <div class="queue-item">
+                        <span class="queue-label">Pending Review</span>
+                        <div class="queue-bar">
+                            <div class="queue-fill pending" style="width: 34%"></div>
+                        </div>
+                        <span class="queue-count">12</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-label">Accepted</span>
+                        <div class="queue-bar">
+                            <div class="queue-fill accepted" style="width: 89%"></div>
+                        </div>
+                        <span class="queue-count">31</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-label">Rejected</span>
+                        <div class="queue-bar">
+                            <div class="queue-fill rejected" style="width: 8%"></div>
+                        </div>
+                        <span class="queue-count">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: AI & INTELLIGENCE LAYER -->
+    <section id="ai-layer" class="section">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Intelligence Layer</h2>
+            <p class="section-subtitle">GPT-4o classification. TF-IDF analysis. Porter stemming. Word frequency mapping.
+            </p>
+        </div>
+
+        <div class="ai-container">
+            <div class="ai-pipeline">
+                <div class="ai-stage">
+                    <div class="ai-stage-header">
+                        <span class="ai-stage-num">1</span>
+                        <span class="ai-stage-name">Document Ingestion</span>
+                    </div>
+                    <div class="ai-stage-content">
+                        <div class="code-block">
+                            <span class="code-comment">// PDF → OCR → Raw Text</span><br>
+                            <span class="code-fn">extractViaOCR</span>(file) → <span class="code-str">"Guest agreed to
+                                terms..."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-stage">
+                    <div class="ai-stage-header">
+                        <span class="ai-stage-num">2</span>
+                        <span class="ai-stage-name">Tokenization</span>
+                    </div>
+                    <div class="ai-stage-content">
+                        <div class="token-display">
+                            <span class="token">cancel</span>
+                            <span class="token">policy</span>
+                            <span class="token">agree</span>
+                            <span class="token">term</span>
+                            <span class="token">refund</span>
+                            <span class="token">nonrefund</span>
+                            <span class="token">book</span>
+                            <span class="token">confirm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-stage">
+                    <div class="ai-stage-header">
+                        <span class="ai-stage-num">3</span>
+                        <span class="ai-stage-name">AI Classification</span>
+                    </div>
+                    <div class="ai-stage-content">
+                        <div class="classification-result">
+                            <div class="class-item win-72h">
+                                <span class="class-label">AUTO_WIN_72H</span>
+                                <span class="class-conf">94.2%</span>
+                            </div>
+                            <div class="class-item win-30-90">
+                                <span class="class-label">WIN_30_90D</span>
+                                <span class="class-conf">4.8%</span>
+                            </div>
+                            <div class="class-item reject-72h">
+                                <span class="class-label">AUTO_REJECT_72H</span>
+                                <span class="class-conf">1.0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="word-cloud-container">
+                <div class="word-cloud-header">WORD FREQUENCY ANALYSIS</div>
+                <div class="word-cloud">
+                    <span class="cloud-word" style="font-size: 2.4em;">cancellation</span>
+                    <span class="cloud-word" style="font-size: 2.1em;">policy</span>
+                    <span class="cloud-word" style="font-size: 1.9em;">nonrefundable</span>
+                    <span class="cloud-word" style="font-size: 1.7em;">agreed</span>
+                    <span class="cloud-word" style="font-size: 1.6em;">confirmed</span>
+                    <span class="cloud-word" style="font-size: 1.5em;">booking</span>
+                    <span class="cloud-word" style="font-size: 1.4em;">checkout</span>
+                    <span class="cloud-word" style="font-size: 1.3em;">reservation</span>
+                    <span class="cloud-word" style="font-size: 1.2em;">terms</span>
+                    <span class="cloud-word" style="font-size: 1.1em;">guest</span>
+                    <span class="cloud-word" style="font-size: 1.0em;">hotel</span>
+                    <span class="cloud-word" style="font-size: 0.95em;">dispute</span>
+                    <span class="cloud-word" style="font-size: 0.9em;">merchant</span>
+                    <span class="cloud-word" style="font-size: 0.85em;">evidence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: EXCEL ALTAR -->
+    <section id="excel-altar" class="section">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">The Data Altar</h2>
+            <p class="section-subtitle">Every sheet unified. Every header conquered. One source of truth.</p>
+        </div>
+
+        <div class="altar-container">
+            <div class="spreadsheet">
+                <div class="spreadsheet-header">
+                    <span class="sheet-tab active">UNIFIED_VIEW</span>
+                    <span class="sheet-tab">CASE_DATA</span>
+                    <span class="sheet-tab">CONTROLLER</span>
+                    <span class="sheet-tab">NOTIFICATIONS</span>
+                    <span class="sheet-tab">LEDGER</span>
+                </div>
+                <div class="spreadsheet-scroll">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Case ID</th>
+                                <th>Ref #</th>
+                                <th>Code</th>
+                                <th>Amount</th>
+                                <th>Category</th>
+                                <th>Assigned</th>
+                                <th>Merchant</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Recovered</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CB-847291</td>
+                                <td class="mono">7847291038</td>
+                                <td>13.7</td>
+                                <td class="mono">$842.50</td>
+                                <td>Customer - Cancel</td>
+                                <td>Analyst-01</td>
+                                <td>Merchant Alpha</td>
+                                <td>01/15/26</td>
+                                <td class="status-won">WON</td>
+                                <td class="mono">$842.50</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847292</td>
+                                <td class="mono">7847292184</td>
+                                <td>10.4</td>
+                                <td class="mono">$1,247.00</td>
+                                <td>Fraud - CNP</td>
+                                <td>Analyst-02</td>
+                                <td>Merchant Beta</td>
+                                <td>01/12/26</td>
+                                <td class="status-pending">PENDING</td>
+                                <td class="mono">-</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847293</td>
+                                <td class="mono">7847293291</td>
+                                <td>4540</td>
+                                <td class="mono">$523.75</td>
+                                <td>Service - Cancel</td>
+                                <td>Analyst-03</td>
+                                <td>Merchant Gamma</td>
+                                <td>01/18/26</td>
+                                <td class="status-won">WON</td>
+                                <td class="mono">$523.75</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847294</td>
+                                <td class="mono">7847294387</td>
+                                <td>F29</td>
+                                <td class="mono">$2,891.00</td>
+                                <td>Fraud - No Auth</td>
+                                <td>Analyst-04</td>
+                                <td>Merchant Delta</td>
+                                <td>01/20/26</td>
+                                <td class="status-lost">LOST</td>
+                                <td class="mono">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847295</td>
+                                <td class="mono">7847295492</td>
+                                <td>13.7</td>
+                                <td class="mono">$445.25</td>
+                                <td>Customer - No Show</td>
+                                <td>Analyst-01</td>
+                                <td>Merchant Epsilon</td>
+                                <td>01/22/26</td>
+                                <td class="status-won">WON</td>
+                                <td class="mono">$445.25</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847296</td>
+                                <td class="mono">7847296518</td>
+                                <td>37</td>
+                                <td class="mono">$1,672.50</td>
+                                <td>Fraud - Card</td>
+                                <td>Analyst-05</td>
+                                <td>Merchant Zeta</td>
+                                <td>01/19/26</td>
+                                <td class="status-pending">PENDING</td>
+                                <td class="mono">-</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847297</td>
+                                <td class="mono">7847297624</td>
+                                <td>AA</td>
+                                <td class="mono">$387.00</td>
+                                <td>Vendor - Billed Direct</td>
+                                <td>Analyst-06</td>
+                                <td>Merchant Eta</td>
+                                <td>01/21/26</td>
+                                <td class="status-won">WON</td>
+                                <td class="mono">$387.00</td>
+                            </tr>
+                            <tr>
+                                <td>CB-847298</td>
+                                <td class="mono">7847298731</td>
+                                <td>10.4</td>
+                                <td class="mono">$956.80</td>
+                                <td>Fraud - CNP</td>
+                                <td>Analyst-07</td>
+                                <td>Merchant Theta</td>
+                                <td>01/17/26</td>
+                                <td class="status-won">WON</td>
+                                <td class="mono">$956.80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="altar-stats">
+                <div class="altar-stat">
+                    <span class="altar-stat-value">6</span>
+                    <span class="altar-stat-label">Source Sheets</span>
+                </div>
+                <div class="altar-stat">
+                    <span class="altar-stat-value">47</span>
+                    <span class="altar-stat-label">Total Columns</span>
+                </div>
+                <div class="altar-stat">
+                    <span class="altar-stat-value">86K+</span>
+                    <span class="altar-stat-label">Rows Processed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: ADMIN THRONE -->
+    <section id="admin-throne" class="section">
+        <div class="section-header">
+            <span class="section-number">06</span>
+            <h2 class="section-title">The Control Plane</h2>
+            <p class="section-subtitle">Feature flags. Configuration overrides. System boundaries. Governance.</p>
+        </div>
+
+        <div class="throne-container">
+            <div class="config-panel">
+                <div class="config-header">FEATURE FLAGS</div>
+                <div class="config-grid">
+                    <div class="config-item">
+                        <span class="config-name">ENABLE_CASE_DISTRIBUTION</span>
+                        <span class="config-toggle on">ON</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-name">ENABLE_ADMIN_PANEL</span>
+                        <span class="config-toggle on">ON</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-name">ENABLE_TIME_TRACKING</span>
+                        <span class="config-toggle on">ON</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-name">ENABLE_KEYBOARD_SHORTCUTS</span>
+                        <span class="config-toggle on">ON</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-name">AI_ENABLED</span>
+                        <span class="config-toggle off">OFF</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-name">ALLOW_BULK_ACTIONS</span>
+                        <span class="config-toggle off">OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="permissions-panel">
+                <div class="permissions-header">ROLE HIERARCHY</div>
+                <div class="role-pyramid">
+                    <div class="role-level level-5">
+                        <span class="role-name">ADMIN</span>
+                        <span class="role-power">5</span>
+                    </div>
+                    <div class="role-level level-4">
+                        <span class="role-name">LEADER</span>
+                        <span class="role-power">4</span>
+                    </div>
+                    <div class="role-level level-3">
+                        <span class="role-name">MANAGER</span>
+                        <span class="role-power">3</span>
+                    </div>
+                    <div class="role-level level-2">
+                        <span class="role-name">ANALYST</span>
+                        <span class="role-power">2</span>
+                    </div>
+                    <div class="role-level level-1">
+                        <span class="role-name">VIEWER</span>
+                        <span class="role-power">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guardrails-panel">
+                <div class="guardrails-header">SYSTEM GUARDRAILS</div>
+                <div class="guardrails-list">
+                    <div class="guardrail">
+                        <span class="guardrail-icon">🔒</span>
+                        <span class="guardrail-text">API keys never in code - Script Properties only</span>
+                    </div>
+                    <div class="guardrail">
+                        <span class="guardrail-icon">🔒</span>
+                        <span class="guardrail-text">LockService prevents race conditions on claims</span>
+                    </div>
+                    <div class="guardrail">
+                        <span class="guardrail-icon">🔒</span>
+                        <span class="guardrail-text">All state transitions logged to AuditDAO</span>
+                    </div>
+                    <div class="guardrail">
+                        <span class="guardrail-icon">🔒</span>
+                        <span class="guardrail-text">Domain-restricted access (enterprise SSO)</span>
+                    </div>
+                    <div class="guardrail">
+                        <span class="guardrail-icon">🔒</span>
+                        <span class="guardrail-text">Frozen config objects prevent runtime mutation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">Ø</span>
+                <span class="footer-version">ORION v2.5.0</span>
+            </div>
+            <div class="footer-center">
+                <span>40,000 lines · 25 files · 40 days</span>
+            </div>
+            <div class="footer-right">
+                <span>Built by <a href="https://naitik.online" target="_blank">Naitik Joshi</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
