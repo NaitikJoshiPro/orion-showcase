@@ -89,11 +89,21 @@ body {
     font-size: 14px;
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
-    background-size: 24px 24px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+/* Fixed dotted grid canvas */
+#dot-grid-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .mono {
@@ -314,8 +324,15 @@ a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
 }
 
 /* =============================================================================
@@ -629,8 +646,15 @@ a:hover {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 .timeline-time {
@@ -694,10 +718,21 @@ a:hover {
     letter-spacing: 0.5px;
 }
 
-.raci-cell.header.r { color: var(--state-info); }
-.raci-cell.header.a { color: var(--state-error); }
-.raci-cell.header.c { color: var(--state-warning); }
-.raci-cell.header.i { color: var(--state-success); }
+.raci-cell.header.r {
+    color: var(--state-info);
+}
+
+.raci-cell.header.a {
+    color: var(--state-error);
+}
+
+.raci-cell.header.c {
+    color: var(--state-warning);
+}
+
+.raci-cell.header.i {
+    color: var(--state-success);
+}
 
 .raci-cell.name {
     font-weight: 500;
@@ -812,9 +847,17 @@ a:hover {
     transition: width 1s ease;
 }
 
-.queue-fill.pending { background: var(--state-warning); }
-.queue-fill.accepted { background: var(--state-success); }
-.queue-fill.rejected { background: var(--state-error); }
+.queue-fill.pending {
+    background: var(--state-warning);
+}
+
+.queue-fill.accepted {
+    background: var(--state-success);
+}
+
+.queue-fill.rejected {
+    background: var(--state-error);
+}
 
 .queue-count {
     font-size: 11px;
@@ -884,9 +927,17 @@ a:hover {
     line-height: 1.8;
 }
 
-.code-comment { color: var(--text-muted); }
-.code-fn { color: var(--state-info); }
-.code-str { color: var(--state-success); }
+.code-comment {
+    color: var(--text-muted);
+}
+
+.code-fn {
+    color: var(--state-info);
+}
+
+.code-str {
+    color: var(--state-success);
+}
 
 .token-display {
     display: flex;
@@ -919,9 +970,17 @@ a:hover {
     border-left: 3px solid var(--border);
 }
 
-.class-item.win-72h { border-left-color: var(--state-success); }
-.class-item.win-30-90 { border-left-color: var(--state-warning); }
-.class-item.reject-72h { border-left-color: var(--state-error); }
+.class-item.win-72h {
+    border-left-color: var(--state-success);
+}
+
+.class-item.win-30-90 {
+    border-left-color: var(--state-warning);
+}
+
+.class-item.reject-72h {
+    border-left-color: var(--state-error);
+}
 
 .class-label {
     font-size: 10px;
@@ -1053,9 +1112,17 @@ a:hover {
     font-family: var(--font-mono);
 }
 
-.status-won { color: var(--state-success); }
-.status-lost { color: var(--state-error); }
-.status-pending { color: var(--state-warning); }
+.status-won {
+    color: var(--state-success);
+}
+
+.status-lost {
+    color: var(--state-error);
+}
+
+.status-pending {
+    color: var(--state-warning);
+}
 
 .altar-stats {
     display: flex;
@@ -1164,11 +1231,25 @@ a:hover {
     border-left: 3px solid var(--border);
 }
 
-.role-level.level-5 { border-left-color: var(--state-error); }
-.role-level.level-4 { border-left-color: var(--state-warning); }
-.role-level.level-3 { border-left-color: var(--state-info); }
-.role-level.level-2 { border-left-color: var(--state-success); }
-.role-level.level-1 { border-left-color: var(--text-muted); }
+.role-level.level-5 {
+    border-left-color: var(--state-error);
+}
+
+.role-level.level-4 {
+    border-left-color: var(--state-warning);
+}
+
+.role-level.level-3 {
+    border-left-color: var(--state-info);
+}
+
+.role-level.level-2 {
+    border-left-color: var(--state-success);
+}
+
+.role-level.level-1 {
+    border-left-color: var(--text-muted);
+}
 
 .role-name {
     font-size: 11px;
@@ -1255,6 +1336,7 @@ a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1266,10 +1348,21 @@ a:hover {
     animation: fadeInUp 0.6s ease forwards;
 }
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.4s; }
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
 
 /* =============================================================================
    SECTION 14: RESPONSIVE
@@ -1279,20 +1372,20 @@ a:hover {
     .kpi-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .modules-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .sanctum-container,
     .ai-container {
         grid-template-columns: 1fr;
     }
-    
+
     .governance-container {
         grid-template-columns: 1fr;
     }
-    
+
     .throne-container {
         grid-template-columns: 1fr;
     }
@@ -1302,27 +1395,27 @@ a:hover {
     .section {
         padding: 100px 24px 60px;
     }
-    
+
     .hero-logo {
         font-size: 72px;
     }
-    
+
     .kpi-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .modules-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .raci-matrix {
         overflow-x: auto;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: 16px;
